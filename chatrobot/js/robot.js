@@ -21,13 +21,7 @@ $(function(){
 	var $create_li = $("<li class = 'border'></li>");
 	$create_li.append($("<div class = 'test-myself'><span>我</span></div>"));
 	$create_li.append($("<div class = 'my-container'></div>"));
-	$create_li.find(".my-container").append($("<div class = 'chat-info-me'></div>"));
-	$create_li.appendTo($("ul.chats-list"));
-	$("ul div.chat-info-me:last").html(input_text); 
-	//3.点击按钮，自动让聊天界面处于最下方,同时清空输入框中的文字
-	var height = document.querySelector("div[class |= 'robot'][class $= 'pannal']").scrollHeight;
-	document.querySelector("div[class |= 'robot'][class $= 'pannal']").scrollTop = height;
-	$("textarea.robot-footer").val("");
+	$ter").val("");
 	// $("div[class |= 'robot'][class $= 'pannal']").animate({scrollTop:$(this).scrollHeight + 'px'},"slow");	
 	//4.点击按钮，同时通过Ajax获取后台的答复
 		//创建异步对象
