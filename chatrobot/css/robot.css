@@ -1,0 +1,241 @@
+body{
+	background:lightpink;
+}
+div[class = "chatrobot"]
+{	
+	position:relative;
+	border:1px hotpink solid;
+	border-radius:10px;
+	width:600px;
+	height:700px;
+	margin:auto auto;
+	background:#FFF0F5;
+	box-shadow:3px 3px 3px #888888; 
+}
+div[class |= "robot"][class $= "header"]
+{
+	text-align:center;
+	font: bold 20px "微软雅黑"; /*font中简写要按照一定的顺序，font-weight要放在前面*/
+	padding-top:10px;
+	padding-bottom:10px;
+	/*border:1px green solid;*/
+	border-top-left-radius:10px; 
+	border-top-right-radius:10px;
+	background:hotpink;
+	width:100%;
+}
+div[class |= "robot"][class $= "menu"]
+{
+	width:100%;
+	height:30px;
+	/*border:1px black solid;*/
+	position:absolute;
+	bottom:70px;
+	box-shadow:0px -0.5px 1px #888888;
+	/*background: black;*/
+}
+div[class |= "robot"][class $= "pannal"]
+{
+	overflow:auto;
+	height:78.3%;
+}
+/*div[class |= "robot"][class $= "footer"]
+{	
+	position:absolute;
+	width:80%;
+	height:70px;
+	border:1px blue solid;
+	border-bottom-left-radius:10px;
+	bottom:0px;
+	background:#ffffff;
+	box-shadow:0px -0.5px 1px #888888;
+}*/
+textarea[class |= "robot"][class $= "footer"]
+{
+	display:block;
+	position:absolute;
+	width:79.5%;
+	height:64px;
+	/*border:1px blue solid;*/
+	border-bottom-left-radius:10px;
+	bottom:0px;
+	background:#ffffff;
+	box-shadow:0px -0.5px 1px #888888;
+	font:500 18px "微软雅黑";
+	overflow: auto;
+
+}
+textarea[class |= "robot"][class $= "footer"]:focus
+{
+	display:block;
+	position:absolute;
+	width:79.5%;
+	/*height:64px;*/ /*当发生文本域获得焦点时，高度略微增加的情况，解除本行注释*/
+	/*border:1px blue solid;*/
+	border-bottom-left-radius:10px;
+	bottom:0px;
+	background:#ffffff;
+	box-shadow:0px -0.5px 1px #888888;
+	font:500 18px "微软雅黑";
+	outline:none;
+}
+div[class |= "robot"][class $= "submitbtn"] 
+{
+	width:19.5%;
+	height:70px;
+	/*border:1px black solid;*/
+	border-bottom-right-radius:10px;
+	border:1px gray solid;
+	/*background: black;*/
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	box-shadow:0px -0.5px 1px #888888;
+	font:bold 18px "微软雅黑";
+	letter-spacing:25px;
+
+}
+div[class |= "robot"][class $= "submitbtn"]  span
+{
+	display:block;
+	position:absolute;
+	left:25px;
+	top:19px;
+}
+div[class |= "test"][class $= "yaliya"]{
+	position:absolute;
+	top:0px;
+	border:1px black solid;
+	height:60px;
+	width:60px;
+	border-radius: 50px;
+	background:hotpink;
+	box-shadow:2px 2px 1px #888888;
+	/*line-height:61.33px;*/ /*一般让行高和氟元素高度一样即可实现垂直居中*/
+	/*padding-bottom:0px;*/
+	/*text-align:center;*/
+	font:900 30px "微软雅黑";
+}
+div[class |= "test"][class $= "myself"]{
+	position:absolute;
+	top:0px;
+	right:0px;
+	border:1px black solid;
+	height:60px;
+	width:60px;
+	border-radius: 50px;
+	background:skyblue;
+	box-shadow:2px 2px 1px #888888;
+	/*line-height:61.33px;*/ /*一般让行高和氟元素高度一样即可实现垂直居中*/
+	/*padding-bottom:0px;*/
+	/*text-align:center;*/
+	font:900 30px "微软雅黑";
+}
+div[class |= "test"][class $= "yaliya"] span
+{
+	position:absolute;
+	display:block;
+	/*top:50px;*/
+	margin:15px;
+	top:-5px;
+	font:900 30px "微软雅黑";
+	color:white;
+	text-shadow:3px 0px 1px #808080;
+}
+div[class |= "test"][class $= "myself"] span
+{
+	position:absolute;
+	display:block;
+	top:-5px;
+	margin:15px;
+	font:900 30px "微软雅黑";
+	color:black;
+	text-shadow:3px 0px 1px #808080;
+}
+ul.chats-list
+{
+	/*border:1px blue solid;*/
+	/*height:100px;*/
+	list-style:none;
+	padding:0px;
+	position:relative;
+}
+ul.chats-list li
+{
+	/*border:1px green solid;*/
+	padding:5px;
+	margin-top:10px;
+	position:relative;
+}
+ul.chats-list li div
+{
+	display:inline-block;
+}
+ul.chats-list li div[class |= "chat-info"][class $= "others"]
+{
+	position:relative;
+	top:12px;
+	left:70px;
+	/*top:-23px;*/
+	max-width:450px;
+	min-height:50px;
+	background:white;
+	border:1px gray solid;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	box-shadow:0px 0px 2px #888888;
+	/*text-align:center;*/
+	line-height:50px;
+	padding-left:5px;
+	padding-right:5px;
+	
+}
+div[class = "my-container"]
+{
+	position:relative;
+	right:-72px;
+	top:12px;
+	/*top:-23px;*/
+	width:450px;
+	line-height:50px;
+	padding-left:5px;
+	padding-right:5px;
+	/*border:2px black solid;*/
+}
+
+
+
+
+ul.chats-list li div[class |= "chat-info"][class $= "me"]
+{
+	float:right;
+	background:white;
+	box-shadow:0px 0px 2px #888888;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border:1px gray solid;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+
+
+
+
+
+
+
+/*.test{
+	border:2px blue solid;
+	width:500px;
+	height:500px;
+	text-align:center;
+
+}
+.test span{
+	display:block;
+	border:3px red dotted;
+	width:50%;
+	margin:auto auto;
+	margin-top:250px;
+}*/
